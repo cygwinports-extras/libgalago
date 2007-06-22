@@ -1,0 +1,123 @@
+libgalago
+------------------------------------------
+Galago is a desktop presence framework, designed to transmit presence 
+information between programs. To put it in simpler terms, it takes 
+information on who is online and their away/idle states from an instant 
+messenger (such as gaim) or other similar programs and lets other 
+programs (such as Ximian's Evolution) to make use of it.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  galago-daemon-0.5.1-1
+  glib2-2.12.12-1
+  libdbus-glib_1_2-0.73-1
+  libdbus1_3-1.0.2-1
+  libintl8-0.15-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.galago-project.org/
+
+Canonical download:
+  http://www.galago-project.org/files/releases/source/libgalago/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libgalago-0.5.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libgalago-0.5.2-X.cygport all
+
+This will create:
+  /usr/src/libgalago-0.5.2-X-src.tar.bz2
+  /usr/src/libgalago-0.5.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libgalago)
+  /usr/bin/cyggalago-3.dll
+  /usr/share/doc/Cygwin/libgalago-0.5.2.README
+  /usr/share/doc/libgalago-0.5.2/ABOUT-NLS
+  /usr/share/doc/libgalago-0.5.2/AUTHORS
+  /usr/share/doc/libgalago-0.5.2/COPYING
+  /usr/share/doc/libgalago-0.5.2/ChangeLog
+  /usr/share/doc/libgalago-0.5.2/INSTALL
+  /usr/share/doc/libgalago-0.5.2/NEWS
+  /usr/share/doc/libgalago-0.5.2/README
+  /usr/share/locale/da/LC_MESSAGES/libgalago.mo
+  /usr/share/locale/de/LC_MESSAGES/libgalago.mo
+  /usr/share/locale/fr/LC_MESSAGES/libgalago.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/libgalago.mo
+
+(libgalago-devel)
+  /usr/include/libgalago/galago-account.h
+  /usr/include/libgalago/galago-assert.h
+  /usr/include/libgalago/galago-context-base.h
+  /usr/include/libgalago/galago-context.h
+  /usr/include/libgalago/galago-core.h
+  /usr/include/libgalago/galago-dbus.h
+  /usr/include/libgalago/galago-enum-types.h
+  /usr/include/libgalago/galago-image.h
+  /usr/include/libgalago/galago-key-value.h
+  /usr/include/libgalago/galago-object.h
+  /usr/include/libgalago/galago-person.h
+  /usr/include/libgalago/galago-presence.h
+  /usr/include/libgalago/galago-service.h
+  /usr/include/libgalago/galago-status.h
+  /usr/include/libgalago/galago-value.h
+  /usr/include/libgalago/galago.h
+  /usr/lib/libgalago.dll.a
+  /usr/lib/libgalago.la
+  /usr/lib/pkgconfig/libgalago.pc
+  /usr/share/gtk-doc/html/libgalago/GalagoAccount.html
+  /usr/share/gtk-doc/html/libgalago/GalagoContext.html
+  /usr/share/gtk-doc/html/libgalago/GalagoCore.html
+  /usr/share/gtk-doc/html/libgalago/GalagoImage.html
+  /usr/share/gtk-doc/html/libgalago/GalagoObject.html
+  /usr/share/gtk-doc/html/libgalago/GalagoPerson.html
+  /usr/share/gtk-doc/html/libgalago/GalagoPresence.html
+  /usr/share/gtk-doc/html/libgalago/GalagoService.html
+  /usr/share/gtk-doc/html/libgalago/GalagoStatus.html
+  /usr/share/gtk-doc/html/libgalago/home.png
+  /usr/share/gtk-doc/html/libgalago/index.html
+  /usr/share/gtk-doc/html/libgalago/index.sgml
+  /usr/share/gtk-doc/html/libgalago/left.png
+  /usr/share/gtk-doc/html/libgalago/libgalago-Assertion-Macros.html
+  /usr/share/gtk-doc/html/libgalago/libgalago-D-BUS-Utility-Functions.html
+  /usr/share/gtk-doc/html/libgalago/libgalago-GalagoKeyValue.html
+  /usr/share/gtk-doc/html/libgalago/libgalago-GalagoValue.html
+  /usr/share/gtk-doc/html/libgalago/libgalago.devhelp
+  /usr/share/gtk-doc/html/libgalago/libgalago.devhelp2
+  /usr/share/gtk-doc/html/libgalago/objects.html
+  /usr/share/gtk-doc/html/libgalago/right.png
+  /usr/share/gtk-doc/html/libgalago/style.css
+  /usr/share/gtk-doc/html/libgalago/up.png
+  /usr/share/gtk-doc/html/libgalago/utils.html
+
+------------------
+
+Port Notes:
+
+----- version 0.5.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
