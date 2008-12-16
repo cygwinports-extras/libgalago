@@ -1,7 +1,5 @@
 category: Gnome
-requires: cygwin glib2-devel libdbus-glib_1-devel libdbus1-devel gettext
-external-source: libgalago
-sdesc: "Desktop presence framework library (development)"
+sdesc: "Desktop presence framework library (sources)"
 ldesc: "Galago is a desktop presence framework, designed to transmit presence
 information between programs. To put it in simpler terms, it takes
 information on who is online and their away/idle states from an instant

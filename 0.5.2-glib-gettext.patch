@@ -1,0 +1,20 @@
+--- origsrc/libgalago-0.5.2/Makefile.am	2006-05-17 18:46:46.000000000 -0500
++++ src/libgalago-0.5.2/Makefile.am	2008-12-15 18:12:57.837625000 -0600
+@@ -1,4 +1,4 @@
+-SUBDIRS = autopackage intl libgalago docs m4 po tests
++SUBDIRS = libgalago docs m4 po tests
+ 
+ pcdata_DATA = libgalago.pc
+ pcdatadir = $(libdir)/pkgconfig
+--- origsrc/libgalago-0.5.2/configure.ac	2006-10-07 10:54:26.000000000 -0500
++++ src/libgalago-0.5.2/configure.ac	2008-12-15 18:07:33.650125000 -0600
+@@ -91,8 +91,7 @@
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [gettext package])
+ 
+-AM_GNU_GETTEXT_VERSION(0.10.40)
+-AM_GNU_GETTEXT
++AM_GLIB_GNU_GETTEXT
+ 
+ pkg_modules="glib-2.0 >= 2.8.0, dbus-1 >= 0.36, dbus-glib-1 >= 0.36"
+ PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
