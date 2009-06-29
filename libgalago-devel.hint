@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgalago3 libdbus-glib_1-devel libdbus1-devel libglib2.0-devel gettext
+requires: libgalago3 libdbus-glib_1-devel libdbus1-devel libglib2.0-devel gettext
 external-source: libgalago
 sdesc: "Desktop presence framework library (development)"
 ldesc: "Galago is a desktop presence framework, designed to transmit presence
